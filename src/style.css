@@ -4,6 +4,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 /* 2. Reset marginesów dla wszystkich elementów, które go domyślnie mają. */
@@ -27,9 +28,10 @@ ol {
 
 /* 3. Ustawienia Body - naprawia problem z fontami. */
 body {
+  margin: 0;
   min-height: 100vh;
   line-height: 1.5; /* Lepsza czytelność tekstu */
-  font-family: sans-serif; /* Podstawowy font, który możesz zmienić na swój */
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased; /* Wygładzanie fontów na systemach macOS */
 }
 
@@ -70,28 +72,8 @@ a {
   color: inherit;
 }
 
-.page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.page__body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.body__main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.main {
-  display: flex;
-  align-items: center;
-}
+/* stars
+ */
 
 .stars {
   display: flex;
